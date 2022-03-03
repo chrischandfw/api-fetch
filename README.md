@@ -24,6 +24,8 @@ The Plan
 -write my event listener
 -add styling
 
+![wireframe](/assets/api wireframe.png"wireframe for api")
+
 Additional considerations:
 
 -   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
