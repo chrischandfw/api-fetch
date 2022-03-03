@@ -9,6 +9,7 @@ const errorElement = document.querySelector('#error-message');
 // grab DOM elements
 async function loadPokedex() {
 	const pokedex = await getPokedex();
+	//console.log(pokedex)
 	list.classList.add('pokemon');
 
 	for (let pokemon of pokedex) {
@@ -29,6 +30,24 @@ async function loadPokedex() {
 //console.log(pokemon, name, image)
 
 // set event listeners 
+selectEl.addEventListener('change', async (e) => {
+	const selected = e.target.value;
+
+	if (selected === 'none') {
+		list.innerHTML = '';
+		errorElement.innerHTML ='';
+		const p = document.createElement('p');
+		p.textContent = 'PLEASE SELECT AN API';
+		errorElement.appendChild(p);
+	} else if (selected === 'pokemon') {
+		list.innerHTML ='';
+		await loadPokedex();
+	} else if (selected === 'star-wars') {
+		list.innerHTML = '';
+		await loadStarWars();
+	}
+}
+
     // get user input
     // use user input to update state 
     // update DOM to reflect the new state
