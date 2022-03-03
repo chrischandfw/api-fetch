@@ -1,6 +1,11 @@
 // import functions
+const template = document.querySelector('template');
+const selectEl = document.querySelector('select');
+
+//console.log(template, selectedEl)
 
 // grab DOM elements
+const errorElement = document.querySelector('#error-message');
 
 // set event listeners 
     // get user input
