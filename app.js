@@ -55,17 +55,17 @@ selectEl.addEventListener('change', async(e) => {
 
     if (selected === 'none') {
         list.innerHTML = '';
-		errorElement.innerHTML ='';
+        errorElement.innerHTML = '';
         const p = document.createElement('p');
         p.textContent = 'PLEASE SELECT AN API';
         errorElement.appendChild(p);
     } else if (selected === 'pokemon') {
-        errorElement.innerHTML ='';
-		list.innerHTML = '';
+        errorElement.innerHTML = '';
+        list.innerHTML = '';
         await loadPokedex();
     } else if (selected === 'star-wars') {
-        errorElement.innerHTML ='';
-		list.innerHTML = '';
+        errorElement.innerHTML = '';
+        list.innerHTML = '';
         await loadStarwars();
     }
 });
