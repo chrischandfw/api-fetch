@@ -23,14 +23,7 @@
 			"always"
 		],
 		"no-console": "warn",
-		"indent": [
-			"error",
-			4,
-			{
-				"SwitchCase": 1,
-				"ignoreComments": true
-			}
-		],
+		"indent": "off",
 		"quotes": [
 			"error",
 			"single",
@@ -59,8 +52,6 @@
 		"space-in-parens": [
 			"error"
 		],
-		"space-infix-ops": "error",
-		{
-			"before": true,
-			"after": true
-		}
+		"space-infix-ops": "error"
+	}
+}

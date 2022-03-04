@@ -10,7 +10,7 @@ const list = document.querySelector('#list');
 // grab DOM elements
 async function loadPokedex() {
     const pokedex = await getPokedex();
-    console.log(pokedex);
+   // console.log(pokedex);
     list.classList.add('pokemon');
 
     for (let pokemon of pokedex) {
@@ -31,7 +31,6 @@ async function loadPokedex() {
 
 async function loadStarwars() {
     const starWars = await getStarwars();
-    console.log(starWars);
     list.classList.add('star-wars');
 
     for (let person of starWars) {

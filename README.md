@@ -24,7 +24,7 @@ The Plan
 -write my event listener
 -add styling
 
-![wireframe](/assets/api wireframe.png)
+![wireframe](/assets/apiwireframe.png)
 
 Additional considerations:
 
