@@ -1,10 +1,20 @@
 export async function getPokedex() {
 	let url = 'https://pokedex-alchemy.herokuapp.com/api/pokedex';
+
+	const resp = await fetch(url);
+
+	const json = await resp.json();
+
+	return json.results;
 }
-console.log(https://pokedex-alchemy.herokuapp.com/api/pokedex);
+//console.log(url + 'fightingType');
 
-const resp = await fetch(https://pokedex-alchemy.herokuapp.com/api/pokedex);
+export async function getStarwars() {
+	let url = 'https://swapi.dev/api/people';
 
-const json = await resp.json();
+	const resp = await fetch(url);
 
-return json.results;
+	const json = await resp.json();
+
+	return json.results;
+}
