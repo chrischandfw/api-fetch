@@ -56,8 +56,8 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
+    justify-content: center;
+    background-color: gold;
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
